@@ -23,7 +23,7 @@ namespace login_taller
        
         private void agregarRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AgregarRepuesto p = new AgregarRepuesto();
+            RegistrarRepuesto p = new RegistrarRepuesto();
             p.Show();
         }
 

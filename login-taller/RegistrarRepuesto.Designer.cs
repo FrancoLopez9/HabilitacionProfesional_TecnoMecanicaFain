@@ -1,6 +1,6 @@
 ﻿namespace login_taller
 {
-    partial class AgregarRepuesto
+    partial class RegistrarRepuesto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarRepuesto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarRepuesto));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,9 +52,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(496, 370);
+            this.button1.Location = new System.Drawing.Point(21, 455);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.Size = new System.Drawing.Size(123, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
@@ -63,94 +64,106 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 55);
+            this.label1.Location = new System.Drawing.Point(18, 143);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 106);
+            this.label2.Location = new System.Drawing.Point(18, 200);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(47, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Marca";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 5);
+            this.label3.Location = new System.Drawing.Point(18, 87);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(122, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Codigo ";
+            this.label3.Text = "Codigo Proveedor";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(375, 18);
+            this.label4.Location = new System.Drawing.Point(18, 24);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.Size = new System.Drawing.Size(58, 17);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Observaciones";
+            this.label4.Text = "Número";
             // 
             // nombreRepuesto
             // 
-            this.nombreRepuesto.Location = new System.Drawing.Point(15, 71);
+            this.nombreRepuesto.Location = new System.Drawing.Point(19, 164);
+            this.nombreRepuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nombreRepuesto.Name = "nombreRepuesto";
-            this.nombreRepuesto.Size = new System.Drawing.Size(248, 20);
+            this.nombreRepuesto.Size = new System.Drawing.Size(329, 22);
             this.nombreRepuesto.TabIndex = 6;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 122);
+            this.textBox1.Location = new System.Drawing.Point(19, 221);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 20);
+            this.textBox1.Size = new System.Drawing.Size(329, 22);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox2.Location = new System.Drawing.Point(16, 21);
+            this.textBox2.Location = new System.Drawing.Point(21, 108);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(207, 20);
+            this.textBox2.Size = new System.Drawing.Size(327, 22);
             this.textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(378, 43);
+            this.textBox3.Location = new System.Drawing.Point(21, 45);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 155);
+            this.textBox3.Size = new System.Drawing.Size(327, 22);
             this.textBox3.TabIndex = 9;
             // 
             // cantidadRepuesto
             // 
             this.cantidadRepuesto.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.cantidadRepuesto.Location = new System.Drawing.Point(15, 175);
+            this.cantidadRepuesto.Location = new System.Drawing.Point(21, 287);
+            this.cantidadRepuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cantidadRepuesto.Name = "cantidadRepuesto";
             this.cantidadRepuesto.ReadOnly = true;
-            this.cantidadRepuesto.Size = new System.Drawing.Size(83, 20);
+            this.cantidadRepuesto.Size = new System.Drawing.Size(109, 22);
             this.cantidadRepuesto.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 159);
+            this.label5.Location = new System.Drawing.Point(18, 266);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 11;
             this.label5.Text = "Cantidad";
             // 
             // cancelar
             // 
             this.cancelar.BackColor = System.Drawing.SystemColors.Window;
-            this.cancelar.Location = new System.Drawing.Point(607, 370);
+            this.cancelar.Location = new System.Drawing.Point(211, 455);
+            this.cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancelar.Name = "cancelar";
-            this.cancelar.Size = new System.Drawing.Size(92, 23);
+            this.cancelar.Size = new System.Drawing.Size(123, 28);
             this.cancelar.TabIndex = 12;
             this.cancelar.Text = "Cancelar";
             this.cancelar.UseVisualStyleBackColor = false;
@@ -159,59 +172,65 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 214);
+            this.label6.Location = new System.Drawing.Point(18, 328);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.Size = new System.Drawing.Size(88, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "Precio Costo";
             // 
             // precioCosto
             // 
-            this.precioCosto.Location = new System.Drawing.Point(16, 230);
+            this.precioCosto.Location = new System.Drawing.Point(21, 349);
+            this.precioCosto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.precioCosto.Name = "precioCosto";
-            this.precioCosto.Size = new System.Drawing.Size(86, 20);
+            this.precioCosto.Size = new System.Drawing.Size(113, 22);
             this.precioCosto.TabIndex = 14;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(156, 214);
+            this.label7.Location = new System.Drawing.Point(168, 328);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 13);
+            this.label7.Size = new System.Drawing.Size(85, 17);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Utilidad %";
+            this.label7.Text = "Ganancia %";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // ganancia
             // 
-            this.ganancia.Location = new System.Drawing.Point(159, 230);
+            this.ganancia.Location = new System.Drawing.Point(171, 349);
+            this.ganancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ganancia.Name = "ganancia";
-            this.ganancia.Size = new System.Drawing.Size(86, 20);
+            this.ganancia.Size = new System.Drawing.Size(113, 22);
             this.ganancia.TabIndex = 16;
             // 
             // precioLista
             // 
-            this.precioLista.Location = new System.Drawing.Point(16, 287);
+            this.precioLista.Location = new System.Drawing.Point(21, 412);
+            this.precioLista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.precioLista.Name = "precioLista";
-            this.precioLista.Size = new System.Drawing.Size(86, 20);
+            this.precioLista.Size = new System.Drawing.Size(113, 22);
             this.precioLista.TabIndex = 17;
             this.precioLista.Click += new System.EventHandler(this.precioLista_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 271);
+            this.label8.Location = new System.Drawing.Point(18, 391);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 13);
+            this.label8.Size = new System.Drawing.Size(82, 17);
             this.label8.TabIndex = 18;
             this.label8.Text = "Precio Lista";
             // 
-            // agregRepuesto
+            // RegistrarRepuesto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(724, 414);
+            this.ClientSize = new System.Drawing.Size(364, 510);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.precioLista);
             this.Controls.Add(this.ganancia);
@@ -231,8 +250,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "agregRepuesto";
-            this.Text = "Agregar Repuesto";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "RegistrarRepuesto";
+            this.Text = "Registrar Repuesto";
             this.ResumeLayout(false);
             this.PerformLayout();
 

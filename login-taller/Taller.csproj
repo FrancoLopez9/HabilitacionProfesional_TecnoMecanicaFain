@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarRepuesto.cs">
+    <Compile Include="RegistrarRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregarRepuesto.Designer.cs">
-      <DependentUpon>AgregarRepuesto.cs</DependentUpon>
+    <Compile Include="RegistrarRepuesto.Designer.cs">
+      <DependentUpon>RegistrarRepuesto.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarCliente.cs">
       <SubType>Form</SubType>
@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="BuscarRepuesto.Designer.cs">
       <DependentUpon>BuscarRepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarComprobantePresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarComprobantePresupuesto.Designer.cs">
+      <DependentUpon>GenerarComprobantePresupuesto.cs</DependentUpon>
     </Compile>
     <Compile Include="ModificarCliente.cs">
       <SubType>Form</SubType>
@@ -111,14 +117,17 @@
     <EmbeddedResource Include="BuscarPresupuesto.resx">
       <DependentUpon>BuscarPresupuesto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenerarComprobantePresupuesto.resx">
+      <DependentUpon>GenerarComprobantePresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgregarRepuesto.resx">
-      <DependentUpon>AgregarRepuesto.cs</DependentUpon>
+    <EmbeddedResource Include="RegistrarRepuesto.resx">
+      <DependentUpon>RegistrarRepuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarRepuesto.resx">
       <DependentUpon>BuscarRepuesto.cs</DependentUpon>

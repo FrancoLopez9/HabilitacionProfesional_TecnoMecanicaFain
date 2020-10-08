@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace login_taller
 {
-    public partial class AgregarRepuesto : Form
+    public partial class RegistrarRepuesto : Form
     {
         public float valor1;
         public float valor2;
 
-        public AgregarRepuesto()
+        public RegistrarRepuesto()
         {
             InitializeComponent();
             cantidadRepuesto.Text = Convert.ToString('0');
@@ -54,6 +54,11 @@ namespace login_taller
             valor2 = 1 + (float.Parse(var1) / 100);
             float valor = (valor1 * valor2);
             precioLista.Text = Convert.ToString(valor);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
