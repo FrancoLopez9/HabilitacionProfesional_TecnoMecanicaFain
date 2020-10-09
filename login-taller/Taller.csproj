@@ -49,6 +49,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarComprobanteCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarComprobanteCliente.Designer.cs">
+      <DependentUpon>BuscarComprobanteCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarComprobanteProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarComprobanteProveedor.Designer.cs">
+      <DependentUpon>BuscarComprobanteProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProveedor.Designer.cs">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarVehiculo.Designer.cs">
+      <DependentUpon>BuscarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarRepuesto.Designer.cs">
+      <DependentUpon>ModificarRepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarVehiculo.Designer.cs">
+      <DependentUpon>ModificarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarComprobanteProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarComprobanteProveedor.Designer.cs">
+      <DependentUpon>RegistrarComprobanteProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarProveedor.Designer.cs">
+      <DependentUpon>RegistrarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,11 +159,29 @@
     <Compile Include="RegistrarPagoCliente.Designer.cs">
       <DependentUpon>RegistrarPagoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVehiculo.Designer.cs">
+      <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BuscarCliente.resx">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuscarComprobanteCliente.resx">
+      <DependentUpon>BuscarComprobanteCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarComprobanteProveedor.resx">
+      <DependentUpon>BuscarComprobanteProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarPresupuesto.resx">
       <DependentUpon>BuscarPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProveedor.resx">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarVehiculo.resx">
+      <DependentUpon>BuscarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerarComprobantePresupuesto.resx">
       <DependentUpon>GenerarComprobantePresupuesto.cs</DependentUpon>
@@ -123,8 +189,20 @@
     <EmbeddedResource Include="ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarRepuesto.resx">
+      <DependentUpon>ModificarRepuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarVehiculo.resx">
+      <DependentUpon>ModificarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarComprobanteProveedor.resx">
+      <DependentUpon>RegistrarComprobanteProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarProveedor.resx">
+      <DependentUpon>RegistrarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarRepuesto.resx">
       <DependentUpon>RegistrarRepuesto.cs</DependentUpon>
@@ -150,6 +228,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrarPagoCliente.resx">
       <DependentUpon>RegistrarPagoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVehiculo.resx">
+      <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
