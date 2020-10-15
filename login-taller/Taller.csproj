@@ -73,6 +73,12 @@
     <Compile Include="BuscarVehiculo.Designer.cs">
       <DependentUpon>BuscarVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarProveedor.Designer.cs">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +97,23 @@
     <Compile Include="RegistrarComprobanteProveedor.Designer.cs">
       <DependentUpon>RegistrarComprobanteProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarPagoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarPagoProveedor.Designer.cs">
+      <DependentUpon>RegistrarPagoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistrarProveedor.Designer.cs">
       <DependentUpon>RegistrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarReparacion.Designer.cs">
+      <DependentUpon>RegistrarReparacion.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarRepuesto.cs">
       <SubType>Form</SubType>
@@ -159,6 +177,12 @@
     <Compile Include="RegistrarPagoCliente.Designer.cs">
       <DependentUpon>RegistrarPagoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarTransaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarTransaccion.Designer.cs">
+      <DependentUpon>RegistrarTransaccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +213,9 @@
     <EmbeddedResource Include="ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarProveedor.resx">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarRepuesto.resx">
       <DependentUpon>ModificarRepuesto.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,8 +228,14 @@
     <EmbeddedResource Include="RegistrarComprobanteProveedor.resx">
       <DependentUpon>RegistrarComprobanteProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarPagoProveedor.resx">
+      <DependentUpon>RegistrarPagoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProveedor.resx">
       <DependentUpon>RegistrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarReparacion.resx">
+      <DependentUpon>RegistrarReparacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarRepuesto.resx">
       <DependentUpon>RegistrarRepuesto.cs</DependentUpon>
@@ -228,6 +261,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrarPagoCliente.resx">
       <DependentUpon>RegistrarPagoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarTransaccion.resx">
+      <DependentUpon>RegistrarTransaccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarVehiculo.resx">
       <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
