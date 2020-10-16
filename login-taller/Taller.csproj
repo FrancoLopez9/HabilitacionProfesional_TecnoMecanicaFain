@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarPrecioRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarPrecioRepuesto.Designer.cs">
+      <DependentUpon>ActualizarPrecioRepuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarComprobanteCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     </Compile>
     <Compile Include="BuscarProveedor.Designer.cs">
       <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarReparacion.Designer.cs">
+      <DependentUpon>BuscarReparacion.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarVehiculo.cs">
       <SubType>Form</SubType>
@@ -189,6 +201,21 @@
     <Compile Include="RegistrarVehiculo.Designer.cs">
       <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteCuentaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCuentaCliente.Designer.cs">
+      <DependentUpon>ReporteCuentaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCuentaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCuentaProveedor.Designer.cs">
+      <DependentUpon>ReporteCuentaProveedor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActualizarPrecioRepuesto.resx">
+      <DependentUpon>ActualizarPrecioRepuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarCliente.resx">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProveedor.resx">
       <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarReparacion.resx">
+      <DependentUpon>BuscarReparacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarVehiculo.resx">
       <DependentUpon>BuscarVehiculo.cs</DependentUpon>
@@ -267,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarVehiculo.resx">
       <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCuentaCliente.resx">
+      <DependentUpon>ReporteCuentaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCuentaProveedor.resx">
+      <DependentUpon>ReporteCuentaProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
