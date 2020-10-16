@@ -49,235 +49,237 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizarPrecioRepuesto.cs">
+    <Compile Include="Form_ActualizarPrecioRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActualizarPrecioRepuesto.Designer.cs">
-      <DependentUpon>ActualizarPrecioRepuesto.cs</DependentUpon>
+    <Compile Include="Form_ActualizarPrecioRepuesto.Designer.cs">
+      <DependentUpon>Form_ActualizarPrecioRepuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarComprobanteCliente.cs">
+    <Compile Include="Form_BuscarComprobanteCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarComprobanteCliente.Designer.cs">
-      <DependentUpon>BuscarComprobanteCliente.cs</DependentUpon>
+    <Compile Include="Form_BuscarComprobanteCliente.Designer.cs">
+      <DependentUpon>Form_BuscarComprobanteCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarComprobanteProveedor.cs">
+    <Compile Include="Form_BuscarComprobanteProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarComprobanteProveedor.Designer.cs">
-      <DependentUpon>BuscarComprobanteProveedor.cs</DependentUpon>
+    <Compile Include="Form_BuscarComprobanteProveedor.Designer.cs">
+      <DependentUpon>Form_BuscarComprobanteProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarProveedor.cs">
+    <Compile Include="Form_BuscarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarProveedor.Designer.cs">
-      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    <Compile Include="Form_BuscarProveedor.Designer.cs">
+      <DependentUpon>Form_BuscarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarReparacion.cs">
+    <Compile Include="Form_BuscarReparacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarReparacion.Designer.cs">
-      <DependentUpon>BuscarReparacion.cs</DependentUpon>
+    <Compile Include="Form_BuscarReparacion.Designer.cs">
+      <DependentUpon>Form_BuscarReparacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarVehiculo.cs">
+    <Compile Include="Form_BuscarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarVehiculo.Designer.cs">
-      <DependentUpon>BuscarVehiculo.cs</DependentUpon>
+    <Compile Include="Form_BuscarVehiculo.Designer.cs">
+      <DependentUpon>Form_BuscarVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarProveedor.cs">
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Form_ModificarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarProveedor.Designer.cs">
-      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    <Compile Include="Form_ModificarProveedor.Designer.cs">
+      <DependentUpon>Form_ModificarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarRepuesto.cs">
+    <Compile Include="Form_ModificarRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarRepuesto.Designer.cs">
-      <DependentUpon>ModificarRepuesto.cs</DependentUpon>
+    <Compile Include="Form_ModificarRepuesto.Designer.cs">
+      <DependentUpon>Form_ModificarRepuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarVehiculo.cs">
+    <Compile Include="Form_ModificarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarVehiculo.Designer.cs">
-      <DependentUpon>ModificarVehiculo.cs</DependentUpon>
+    <Compile Include="Form_ModificarVehiculo.Designer.cs">
+      <DependentUpon>Form_ModificarVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarComprobanteProveedor.cs">
+    <Compile Include="Form_RegistrarComprobanteProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarComprobanteProveedor.Designer.cs">
-      <DependentUpon>RegistrarComprobanteProveedor.cs</DependentUpon>
+    <Compile Include="Form_RegistrarComprobanteProveedor.Designer.cs">
+      <DependentUpon>Form_RegistrarComprobanteProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarPagoProveedor.cs">
+    <Compile Include="Form_RegistrarPagoProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarPagoProveedor.Designer.cs">
-      <DependentUpon>RegistrarPagoProveedor.cs</DependentUpon>
+    <Compile Include="Form_RegistrarPagoProveedor.Designer.cs">
+      <DependentUpon>Form_RegistrarPagoProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarProveedor.cs">
+    <Compile Include="Form_RegistrarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarProveedor.Designer.cs">
-      <DependentUpon>RegistrarProveedor.cs</DependentUpon>
+    <Compile Include="Form_RegistrarProveedor.Designer.cs">
+      <DependentUpon>Form_RegistrarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarReparacion.cs">
+    <Compile Include="Form_RegistrarReparacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarReparacion.Designer.cs">
-      <DependentUpon>RegistrarReparacion.cs</DependentUpon>
+    <Compile Include="Form_RegistrarReparacion.Designer.cs">
+      <DependentUpon>Form_RegistrarReparacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarRepuesto.cs">
+    <Compile Include="Form_RegistrarRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarRepuesto.Designer.cs">
-      <DependentUpon>RegistrarRepuesto.cs</DependentUpon>
+    <Compile Include="Form_RegistrarRepuesto.Designer.cs">
+      <DependentUpon>Form_RegistrarRepuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarCliente.cs">
+    <Compile Include="Form_BuscarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarCliente.Designer.cs">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    <Compile Include="Form_BuscarCliente.Designer.cs">
+      <DependentUpon>Form_BuscarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarPresupuesto.cs">
+    <Compile Include="Form_BuscarPresupuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarPresupuesto.Designer.cs">
-      <DependentUpon>BuscarPresupuesto.cs</DependentUpon>
+    <Compile Include="Form_BuscarPresupuesto.Designer.cs">
+      <DependentUpon>Form_BuscarPresupuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarRepuesto.cs">
+    <Compile Include="Form_BuscarRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarRepuesto.Designer.cs">
-      <DependentUpon>BuscarRepuesto.cs</DependentUpon>
+    <Compile Include="Form_BuscarRepuesto.Designer.cs">
+      <DependentUpon>Form_BuscarRepuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenerarComprobantePresupuesto.cs">
+    <Compile Include="Form_GenerarComprobantePresupuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenerarComprobantePresupuesto.Designer.cs">
-      <DependentUpon>GenerarComprobantePresupuesto.cs</DependentUpon>
+    <Compile Include="Form_GenerarComprobantePresupuesto.Designer.cs">
+      <DependentUpon>Form_GenerarComprobantePresupuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarCliente.cs">
+    <Compile Include="Form_ModificarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarCliente.Designer.cs">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    <Compile Include="Form_ModificarCliente.Designer.cs">
+      <DependentUpon>Form_ModificarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarCliente.cs">
+    <Compile Include="Form_RegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarCliente.Designer.cs">
-      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    <Compile Include="Form_RegistrarCliente.Designer.cs">
+      <DependentUpon>Form_RegistrarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrinc.cs">
+    <Compile Include="Form_MenuPrinc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrinc.Designer.cs">
-      <DependentUpon>MenuPrinc.cs</DependentUpon>
+    <Compile Include="Form_MenuPrinc.Designer.cs">
+      <DependentUpon>Form_MenuPrinc.cs</DependentUpon>
     </Compile>
+    <Compile Include="PagoCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrarPagoCliente.cs">
+    <Compile Include="Form_RegistrarPagoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarPagoCliente.Designer.cs">
-      <DependentUpon>RegistrarPagoCliente.cs</DependentUpon>
+    <Compile Include="Form_RegistrarPagoCliente.Designer.cs">
+      <DependentUpon>Form_RegistrarPagoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarTransaccion.cs">
+    <Compile Include="Form_RegistrarTransaccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarTransaccion.Designer.cs">
-      <DependentUpon>RegistrarTransaccion.cs</DependentUpon>
+    <Compile Include="Form_RegistrarTransaccion.Designer.cs">
+      <DependentUpon>Form_RegistrarTransaccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarVehiculo.cs">
+    <Compile Include="Form_RegistrarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarVehiculo.Designer.cs">
-      <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
+    <Compile Include="Form_RegistrarVehiculo.Designer.cs">
+      <DependentUpon>Form_RegistrarVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteCuentaCliente.cs">
+    <Compile Include="Form_ReporteCuentaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteCuentaCliente.Designer.cs">
-      <DependentUpon>ReporteCuentaCliente.cs</DependentUpon>
+    <Compile Include="Form_ReporteCuentaCliente.Designer.cs">
+      <DependentUpon>Form_ReporteCuentaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteCuentaProveedor.cs">
+    <Compile Include="Form_ReporteCuentaProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteCuentaProveedor.Designer.cs">
-      <DependentUpon>ReporteCuentaProveedor.cs</DependentUpon>
+    <Compile Include="Form_ReporteCuentaProveedor.Designer.cs">
+      <DependentUpon>Form_ReporteCuentaProveedor.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ActualizarPrecioRepuesto.resx">
-      <DependentUpon>ActualizarPrecioRepuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ActualizarPrecioRepuesto.resx">
+      <DependentUpon>Form_ActualizarPrecioRepuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarCliente.resx">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarCliente.resx">
+      <DependentUpon>Form_BuscarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarComprobanteCliente.resx">
-      <DependentUpon>BuscarComprobanteCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarComprobanteCliente.resx">
+      <DependentUpon>Form_BuscarComprobanteCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarComprobanteProveedor.resx">
-      <DependentUpon>BuscarComprobanteProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarComprobanteProveedor.resx">
+      <DependentUpon>Form_BuscarComprobanteProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarPresupuesto.resx">
-      <DependentUpon>BuscarPresupuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarPresupuesto.resx">
+      <DependentUpon>Form_BuscarPresupuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarProveedor.resx">
-      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarProveedor.resx">
+      <DependentUpon>Form_BuscarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarReparacion.resx">
-      <DependentUpon>BuscarReparacion.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarReparacion.resx">
+      <DependentUpon>Form_BuscarReparacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarVehiculo.resx">
-      <DependentUpon>BuscarVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarVehiculo.resx">
+      <DependentUpon>Form_BuscarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenerarComprobantePresupuesto.resx">
-      <DependentUpon>GenerarComprobantePresupuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_GenerarComprobantePresupuesto.resx">
+      <DependentUpon>Form_GenerarComprobantePresupuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarCliente.resx">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ModificarCliente.resx">
+      <DependentUpon>Form_ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarProveedor.resx">
-      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ModificarProveedor.resx">
+      <DependentUpon>Form_ModificarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarRepuesto.resx">
-      <DependentUpon>ModificarRepuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ModificarRepuesto.resx">
+      <DependentUpon>Form_ModificarRepuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarVehiculo.resx">
-      <DependentUpon>ModificarVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ModificarVehiculo.resx">
+      <DependentUpon>Form_ModificarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarCliente.resx">
-      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarCliente.resx">
+      <DependentUpon>Form_RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarComprobanteProveedor.resx">
-      <DependentUpon>RegistrarComprobanteProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarComprobanteProveedor.resx">
+      <DependentUpon>Form_RegistrarComprobanteProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarPagoProveedor.resx">
-      <DependentUpon>RegistrarPagoProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarPagoProveedor.resx">
+      <DependentUpon>Form_RegistrarPagoProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarProveedor.resx">
-      <DependentUpon>RegistrarProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarProveedor.resx">
+      <DependentUpon>Form_RegistrarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarReparacion.resx">
-      <DependentUpon>RegistrarReparacion.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarReparacion.resx">
+      <DependentUpon>Form_RegistrarReparacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarRepuesto.resx">
-      <DependentUpon>RegistrarRepuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarRepuesto.resx">
+      <DependentUpon>Form_RegistrarRepuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarRepuesto.resx">
-      <DependentUpon>BuscarRepuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BuscarRepuesto.resx">
+      <DependentUpon>Form_BuscarRepuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrinc.resx">
-      <DependentUpon>MenuPrinc.cs</DependentUpon>
+    <EmbeddedResource Include="Form_MenuPrinc.resx">
+      <DependentUpon>Form_MenuPrinc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -289,20 +291,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegistrarPagoCliente.resx">
-      <DependentUpon>RegistrarPagoCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarPagoCliente.resx">
+      <DependentUpon>Form_RegistrarPagoCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarTransaccion.resx">
-      <DependentUpon>RegistrarTransaccion.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarTransaccion.resx">
+      <DependentUpon>Form_RegistrarTransaccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarVehiculo.resx">
-      <DependentUpon>RegistrarVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RegistrarVehiculo.resx">
+      <DependentUpon>Form_RegistrarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteCuentaCliente.resx">
-      <DependentUpon>ReporteCuentaCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ReporteCuentaCliente.resx">
+      <DependentUpon>Form_ReporteCuentaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteCuentaProveedor.resx">
-      <DependentUpon>ReporteCuentaProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ReporteCuentaProveedor.resx">
+      <DependentUpon>Form_ReporteCuentaProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

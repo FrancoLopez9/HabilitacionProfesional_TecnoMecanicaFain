@@ -17,7 +17,7 @@ namespace login_taller
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Login menu = new Login();
+            Form_Login menu = new Form_Login();
             menu.Show(); 
             Application.Run();
         }
