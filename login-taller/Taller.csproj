@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompraRepuesto.cs" />
+    <Compile Include="Devolucion.cs" />
     <Compile Include="Form_ActualizarPrecioRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,7 +184,14 @@
     <Compile Include="Form_MenuPrinc.Designer.cs">
       <DependentUpon>Form_MenuPrinc.cs</DependentUpon>
     </Compile>
+    <Compile Include="LineaCompra.cs" />
+    <Compile Include="LineaDevolucion.cs" />
+    <Compile Include="LineaNotaCredito.cs" />
+    <Compile Include="LineaReparacion.cs" />
+    <Compile Include="LineaVenta.cs" />
+    <Compile Include="NotaCreditoProveedor.cs" />
     <Compile Include="PagoCliente.cs" />
+    <Compile Include="PagoProveedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Form_RegistrarPagoCliente.cs">
@@ -215,6 +224,11 @@
     <Compile Include="Form_ReporteCuentaProveedor.Designer.cs">
       <DependentUpon>Form_ReporteCuentaProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proveedor.cs" />
+    <Compile Include="Reparacion.cs" />
+    <Compile Include="Repuesto.cs" />
+    <Compile Include="Vehiculo.cs" />
+    <Compile Include="Venta.cs" />
     <EmbeddedResource Include="Form_ActualizarPrecioRepuesto.resx">
       <DependentUpon>Form_ActualizarPrecioRepuesto.cs</DependentUpon>
     </EmbeddedResource>
