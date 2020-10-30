@@ -32,5 +32,23 @@ namespace login_taller
             Form_BuscarRepuesto p = new Form_BuscarRepuesto();
             p.Show();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarCliente p = new Form_RegistrarCliente();
+            p.Show();
+        }
+
+        private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_BuscarCliente p = new Form_BuscarCliente();
+            p.Show();
+        }
+
+        private void modificarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ModificarCliente p = new Form_ModificarCliente();
+            p.Show();
+        }
     }
 }

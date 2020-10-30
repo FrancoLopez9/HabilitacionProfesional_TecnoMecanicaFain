@@ -15,6 +15,12 @@ namespace login_taller
         public Form_BuscarCliente()
         {
             InitializeComponent();
+            dataGridView1.DataSource = DB_AccesoDatosSQLite.cargarClientes();
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = DB_AccesoDatosSQLite.cargarClientes().Where(x => x.DNI.ToString().Contains(textBox_DNI.Text)).ToList();
         }
     }
 }

@@ -13,5 +13,12 @@ namespace login_taller
         private DateTime Fecha;
         private float Total;
         private List<LineaDevolucion> ListaLineaDevolucion;
+
+        public void agregarLineaDevolucion()
+        {
+           // ListaLineaDevolucion.Count + 1;
+        }
     }
+
+    
 }

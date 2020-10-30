@@ -21,5 +21,17 @@ namespace login_taller
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Cliente unCliente = new Cliente();
+            unCliente.Nombre = textBox_Nombre.Text;
+            unCliente.Apellido = textBox_Apellido.Text;
+            unCliente.DNI = Int32.Parse(textBox_DNI.Text); //Hay que convertir el texto en integer
+            unCliente.Domicilio = textBox_Domicilio.Text;
+            unCliente.Telefono = textBox_Telefono.Text;
+            DB_AccesoDatosSQLite.guardarClientes(unCliente);
+
+        }
     }
 }
