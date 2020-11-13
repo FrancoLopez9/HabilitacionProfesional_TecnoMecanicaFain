@@ -40,7 +40,7 @@
             this.comprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarCompraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarComprobanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuracionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vehiculosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.repuestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarRepuestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +54,9 @@
             this.registrarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarProveedorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarProveedorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarVehículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarVehículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarVehículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +68,7 @@
             this.repuestosToolStripMenuItem1,
             this.clientesToolStripMenuItem1,
             this.comprasToolStripMenuItem1,
-            this.configuracionesToolStripMenuItem1,
+            this.vehiculosToolStripMenuItem1,
             this.proveedoresToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -148,11 +151,15 @@
             this.buscarComprobanteToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.buscarComprobanteToolStripMenuItem.Text = "Buscar Comprobante";
             // 
-            // configuracionesToolStripMenuItem1
+            // vehiculosToolStripMenuItem1
             // 
-            this.configuracionesToolStripMenuItem1.Name = "configuracionesToolStripMenuItem1";
-            this.configuracionesToolStripMenuItem1.Size = new System.Drawing.Size(130, 24);
-            this.configuracionesToolStripMenuItem1.Text = "Configuraciones";
+            this.vehiculosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarVehículoToolStripMenuItem,
+            this.modificarVehículoToolStripMenuItem,
+            this.buscarVehículoToolStripMenuItem});
+            this.vehiculosToolStripMenuItem1.Name = "vehiculosToolStripMenuItem1";
+            this.vehiculosToolStripMenuItem1.Size = new System.Drawing.Size(85, 24);
+            this.vehiculosToolStripMenuItem1.Text = "Vehículos";
             // 
             // repuestosToolStripMenuItem
             // 
@@ -231,6 +238,27 @@
             this.buscarProveedorToolStripMenuItem1.Text = "Buscar Proveedor";
             this.buscarProveedorToolStripMenuItem1.Click += new System.EventHandler(this.buscarProveedorToolStripMenuItem1_Click);
             // 
+            // registrarVehículoToolStripMenuItem
+            // 
+            this.registrarVehículoToolStripMenuItem.Name = "registrarVehículoToolStripMenuItem";
+            this.registrarVehículoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.registrarVehículoToolStripMenuItem.Text = "Registrar Vehículo";
+            this.registrarVehículoToolStripMenuItem.Click += new System.EventHandler(this.registrarVehículoToolStripMenuItem_Click);
+            // 
+            // modificarVehículoToolStripMenuItem
+            // 
+            this.modificarVehículoToolStripMenuItem.Name = "modificarVehículoToolStripMenuItem";
+            this.modificarVehículoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.modificarVehículoToolStripMenuItem.Text = "Modificar Vehículo";
+            this.modificarVehículoToolStripMenuItem.Click += new System.EventHandler(this.modificarVehículoToolStripMenuItem_Click);
+            // 
+            // buscarVehículoToolStripMenuItem
+            // 
+            this.buscarVehículoToolStripMenuItem.Name = "buscarVehículoToolStripMenuItem";
+            this.buscarVehículoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.buscarVehículoToolStripMenuItem.Text = "Buscar Vehículo";
+            this.buscarVehículoToolStripMenuItem.Click += new System.EventHandler(this.buscarVehículoToolStripMenuItem_Click);
+            // 
             // Form_MenuPrinc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -270,7 +298,7 @@
         private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem registrarCompraToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem buscarComprobanteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configuracionesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem vehiculosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem buscarClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarClienteToolStripMenuItem;
@@ -278,5 +306,8 @@
         private System.Windows.Forms.ToolStripMenuItem registrarProveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarProveedorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem buscarProveedorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem registrarVehículoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarVehículoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarVehículoToolStripMenuItem;
     }
 }

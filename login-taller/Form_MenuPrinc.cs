@@ -73,5 +73,23 @@ namespace login_taller
         {
 
         }
+
+        private void registrarVehículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarVehiculo p = new Form_RegistrarVehiculo();
+            p.Show();
+        }
+
+        private void modificarVehículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ModificarVehiculo p = new Form_ModificarVehiculo();
+            p.Show();
+        }
+
+        private void buscarVehículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_BuscarVehiculo p = new Form_BuscarVehiculo();
+            p.Show();
+        }
     }
 }

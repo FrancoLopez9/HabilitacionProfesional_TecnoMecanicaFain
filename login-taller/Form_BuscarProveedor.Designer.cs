@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button_Buscar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_Cancelar = new System.Windows.Forms.Button();
             this.button_RegistrarProveedor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -94,14 +94,15 @@
             this.button_Buscar.UseVisualStyleBackColor = true;
             this.button_Buscar.Click += new System.EventHandler(this.button_Buscar_Click);
             // 
-            // button2
+            // button_Cancelar
             // 
-            this.button2.Location = new System.Drawing.Point(111, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Location = new System.Drawing.Point(111, 260);
+            this.button_Cancelar.Name = "button_Cancelar";
+            this.button_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.button_Cancelar.TabIndex = 6;
+            this.button_Cancelar.Text = "Cancelar";
+            this.button_Cancelar.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Click += new System.EventHandler(this.button_Cancelar_Click);
             // 
             // button_RegistrarProveedor
             // 
@@ -119,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 309);
             this.Controls.Add(this.button_RegistrarProveedor);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Cancelar);
             this.Controls.Add(this.button_Buscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -143,7 +144,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_Buscar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_Cancelar;
         private System.Windows.Forms.Button button_RegistrarProveedor;
     }
 }

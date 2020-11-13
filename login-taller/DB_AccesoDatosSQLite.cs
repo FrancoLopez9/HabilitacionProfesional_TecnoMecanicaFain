@@ -32,6 +32,8 @@ namespace login_taller
             Comando.ExecuteNonQuery();
             Conexion.Close();
         }
+
+        // CLIENTES
         public static List<Cliente> cargarClientes()
         {
             using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
@@ -74,6 +76,7 @@ namespace login_taller
             }
         }
 
+        // PROVEEDORES
         public static List<Proveedor> cargarProveedores()
         {
             using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
@@ -112,6 +115,47 @@ namespace login_taller
                 var salida = cnn.Query<Proveedor>("select * from Proveedor", new DynamicParameters());
                 List<Proveedor> listaProveedores = salida.ToList();
                 return listaProveedores.Where(x => x.Numero == numeroProveedor).First();
+            }
+        }
+
+        // VEHICULO
+        public static List<Vehiculo> cargarVehiculos()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                var salida = cnn.Query<Vehiculo>("select * from Vehiculo", new DynamicParameters());
+                return salida.ToList();
+            }
+        }
+
+        public static void guardarVehiculo(Vehiculo unVehiculo)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                cnn.Execute("INSERT INTO Vehiculo (Dominio, Marca, Modelo, Año, Observaciones)" +
+                    " VALUES (@Dominio, @Marca, @Modelo, @Año, @Observaciones)", unVehiculo);
+            }
+        }
+        public static void modificarVehiculo(Vehiculo unVehiculo)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                cnn.Execute("UPDATE Vehiculo" +
+                    " SET Dominio = @Dominio" +
+                    ", Marca = @Marca" +
+                    ", Modelo = @Modelo" +
+                    ", Año = @Año" +
+                    ", Observaciones = @Observaciones" +
+                    " WHERE Numero = @Numero", unVehiculo);
+            }
+        }
+        public static Vehiculo devolverVehiculo(int numeroVehiculo)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                var salida = cnn.Query<Vehiculo>("select * from Vehiculo", new DynamicParameters());
+                List<Vehiculo> listaVehiculos = salida.ToList();
+                return listaVehiculos.Where(x => x.Numero == numeroVehiculo).First();
             }
         }
         private static string loadConnectionString(string id = "Default")

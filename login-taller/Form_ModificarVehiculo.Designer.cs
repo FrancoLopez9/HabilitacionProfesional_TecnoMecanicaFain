@@ -28,35 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_BuscarNumero = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBox_Dominio = new System.Windows.Forms.TextBox();
+            this.textBox_Año = new System.Windows.Forms.TextBox();
+            this.textBox_Marca = new System.Windows.Forms.TextBox();
+            this.textBox_Modelo = new System.Windows.Forms.TextBox();
+            this.textBox_Observaciones = new System.Windows.Forms.TextBox();
+            this.button_Cancelar = new System.Windows.Forms.Button();
+            this.button_Guardar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox_NumeroVehiculo = new System.Windows.Forms.TextBox();
+            this.button_Seleccionar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // button_BuscarNumero
             // 
-            this.button1.Location = new System.Drawing.Point(22, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Buscar Vehículo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_BuscarNumero.Location = new System.Drawing.Point(22, 22);
+            this.button_BuscarNumero.Name = "button_BuscarNumero";
+            this.button_BuscarNumero.Size = new System.Drawing.Size(157, 23);
+            this.button_BuscarNumero.TabIndex = 0;
+            this.button_BuscarNumero.Text = "Buscar Número";
+            this.button_BuscarNumero.UseVisualStyleBackColor = true;
+            this.button_BuscarNumero.Click += new System.EventHandler(this.button_BuscarNumero_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 63);
+            this.label1.Location = new System.Drawing.Point(32, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 17);
             this.label1.TabIndex = 1;
@@ -65,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 91);
+            this.label2.Location = new System.Drawing.Point(37, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 2;
@@ -74,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 119);
+            this.label3.Location = new System.Drawing.Point(44, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 3;
@@ -83,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 147);
+            this.label4.Location = new System.Drawing.Point(58, 244);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 17);
             this.label4.TabIndex = 4;
@@ -92,7 +96,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 180);
+            this.label5.Location = new System.Drawing.Point(14, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 17);
             this.label5.TabIndex = 5;
@@ -109,80 +113,111 @@
             this.checkBox1.Text = "Eliminar Vehículo";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBox_Dominio
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 22);
-            this.textBox1.TabIndex = 7;
+            this.textBox_Dominio.Location = new System.Drawing.Point(115, 157);
+            this.textBox_Dominio.Name = "textBox_Dominio";
+            this.textBox_Dominio.Size = new System.Drawing.Size(220, 22);
+            this.textBox_Dominio.TabIndex = 7;
             // 
-            // textBox2
+            // textBox_Año
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 22);
-            this.textBox2.TabIndex = 8;
+            this.textBox_Año.Location = new System.Drawing.Point(115, 241);
+            this.textBox_Año.Name = "textBox_Año";
+            this.textBox_Año.Size = new System.Drawing.Size(220, 22);
+            this.textBox_Año.TabIndex = 8;
             // 
-            // textBox3
+            // textBox_Marca
             // 
-            this.textBox3.Location = new System.Drawing.Point(120, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 22);
-            this.textBox3.TabIndex = 9;
+            this.textBox_Marca.Location = new System.Drawing.Point(115, 213);
+            this.textBox_Marca.Name = "textBox_Marca";
+            this.textBox_Marca.Size = new System.Drawing.Size(220, 22);
+            this.textBox_Marca.TabIndex = 9;
             // 
-            // textBox4
+            // textBox_Modelo
             // 
-            this.textBox4.Location = new System.Drawing.Point(120, 88);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(220, 22);
-            this.textBox4.TabIndex = 10;
+            this.textBox_Modelo.Location = new System.Drawing.Point(115, 185);
+            this.textBox_Modelo.Name = "textBox_Modelo";
+            this.textBox_Modelo.Size = new System.Drawing.Size(220, 22);
+            this.textBox_Modelo.TabIndex = 10;
             // 
-            // textBox5
+            // textBox_Observaciones
             // 
-            this.textBox5.Location = new System.Drawing.Point(22, 200);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(318, 87);
-            this.textBox5.TabIndex = 11;
+            this.textBox_Observaciones.Location = new System.Drawing.Point(17, 297);
+            this.textBox_Observaciones.Multiline = true;
+            this.textBox_Observaciones.Name = "textBox_Observaciones";
+            this.textBox_Observaciones.Size = new System.Drawing.Size(318, 87);
+            this.textBox_Observaciones.TabIndex = 11;
             // 
-            // button2
+            // button_Cancelar
             // 
-            this.button2.Location = new System.Drawing.Point(52, 312);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Location = new System.Drawing.Point(47, 409);
+            this.button_Cancelar.Name = "button_Cancelar";
+            this.button_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.button_Cancelar.TabIndex = 12;
+            this.button_Cancelar.Text = "Cancelar";
+            this.button_Cancelar.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Click += new System.EventHandler(this.button_Cancelar_Click);
             // 
-            // button3
+            // button_Guardar
             // 
-            this.button3.Location = new System.Drawing.Point(216, 312);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_Guardar.Location = new System.Drawing.Point(211, 409);
+            this.button_Guardar.Name = "button_Guardar";
+            this.button_Guardar.Size = new System.Drawing.Size(75, 23);
+            this.button_Guardar.TabIndex = 13;
+            this.button_Guardar.Text = "Guardar";
+            this.button_Guardar.UseVisualStyleBackColor = true;
+            this.button_Guardar.Click += new System.EventHandler(this.button_Guardar_Click);
             // 
-            // ModificarVehiculo
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 17);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "N° Vehículo:";
+            // 
+            // textBox_NumeroVehiculo
+            // 
+            this.textBox_NumeroVehiculo.Location = new System.Drawing.Point(125, 87);
+            this.textBox_NumeroVehiculo.Name = "textBox_NumeroVehiculo";
+            this.textBox_NumeroVehiculo.Size = new System.Drawing.Size(100, 22);
+            this.textBox_NumeroVehiculo.TabIndex = 15;
+            // 
+            // button_Seleccionar
+            // 
+            this.button_Seleccionar.Location = new System.Drawing.Point(245, 86);
+            this.button_Seleccionar.Name = "button_Seleccionar";
+            this.button_Seleccionar.Size = new System.Drawing.Size(90, 23);
+            this.button_Seleccionar.TabIndex = 16;
+            this.button_Seleccionar.Text = "Seleccionar";
+            this.button_Seleccionar.UseVisualStyleBackColor = true;
+            this.button_Seleccionar.Click += new System.EventHandler(this.button_Seleccionar_Click);
+            // 
+            // Form_ModificarVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 350);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(358, 468);
+            this.Controls.Add(this.button_Seleccionar);
+            this.Controls.Add(this.textBox_NumeroVehiculo);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button_Guardar);
+            this.Controls.Add(this.button_Cancelar);
+            this.Controls.Add(this.textBox_Observaciones);
+            this.Controls.Add(this.textBox_Modelo);
+            this.Controls.Add(this.textBox_Marca);
+            this.Controls.Add(this.textBox_Año);
+            this.Controls.Add(this.textBox_Dominio);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Name = "ModificarVehiculo";
+            this.Controls.Add(this.button_BuscarNumero);
+            this.Name = "Form_ModificarVehiculo";
             this.Text = "Modificar Vehiculo";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,19 +226,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_BuscarNumero;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox_Dominio;
+        private System.Windows.Forms.TextBox textBox_Año;
+        private System.Windows.Forms.TextBox textBox_Marca;
+        private System.Windows.Forms.TextBox textBox_Modelo;
+        private System.Windows.Forms.TextBox textBox_Observaciones;
+        private System.Windows.Forms.Button button_Cancelar;
+        private System.Windows.Forms.Button button_Guardar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox_NumeroVehiculo;
+        private System.Windows.Forms.Button button_Seleccionar;
     }
 }

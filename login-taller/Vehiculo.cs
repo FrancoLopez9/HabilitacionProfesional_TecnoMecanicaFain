@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace login_taller
 {
-    class Vehiculo
+    public class Vehiculo
     {
-        private int Numero;
-        private string Dominio;
-        private string Marca;
-        private string Modelo;
-        private int Año;
-        private string Observaciones;
+        public int Numero { get; set; }
+        public string Dominio { get; set; }
+        public string Marca { get; set; }
+        public string Modelo { get; set; }
+        public int Año { get; set; }
+        public string Observaciones { get; set; }
     }
 }

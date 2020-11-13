@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBox_Dominio = new System.Windows.Forms.TextBox();
+            this.textBox_Marca = new System.Windows.Forms.TextBox();
+            this.textBox_Modelo = new System.Windows.Forms.TextBox();
+            this.textBox_Año = new System.Windows.Forms.TextBox();
+            this.textBox_Observaciones = new System.Windows.Forms.TextBox();
+            this.button_Cancelar = new System.Windows.Forms.Button();
+            this.button_Guardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,78 +87,79 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Observaciones:";
             // 
-            // textBox1
+            // textBox_Dominio
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 22);
-            this.textBox1.TabIndex = 5;
+            this.textBox_Dominio.Location = new System.Drawing.Point(130, 13);
+            this.textBox_Dominio.Name = "textBox_Dominio";
+            this.textBox_Dominio.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Dominio.TabIndex = 5;
             // 
-            // textBox2
+            // textBox_Marca
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 22);
-            this.textBox2.TabIndex = 6;
+            this.textBox_Marca.Location = new System.Drawing.Point(130, 41);
+            this.textBox_Marca.Name = "textBox_Marca";
+            this.textBox_Marca.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Marca.TabIndex = 6;
             // 
-            // textBox3
+            // textBox_Modelo
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 69);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 22);
-            this.textBox3.TabIndex = 7;
+            this.textBox_Modelo.Location = new System.Drawing.Point(130, 69);
+            this.textBox_Modelo.Name = "textBox_Modelo";
+            this.textBox_Modelo.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Modelo.TabIndex = 7;
             // 
-            // textBox4
+            // textBox_Año
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 97);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 22);
-            this.textBox4.TabIndex = 8;
+            this.textBox_Año.Location = new System.Drawing.Point(130, 97);
+            this.textBox_Año.Name = "textBox_Año";
+            this.textBox_Año.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Año.TabIndex = 8;
             // 
-            // textBox5
+            // textBox_Observaciones
             // 
-            this.textBox5.Location = new System.Drawing.Point(13, 148);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(296, 127);
-            this.textBox5.TabIndex = 9;
+            this.textBox_Observaciones.Location = new System.Drawing.Point(13, 148);
+            this.textBox_Observaciones.Multiline = true;
+            this.textBox_Observaciones.Name = "textBox_Observaciones";
+            this.textBox_Observaciones.Size = new System.Drawing.Size(296, 127);
+            this.textBox_Observaciones.TabIndex = 9;
             // 
-            // button1
+            // button_Cancelar
             // 
-            this.button1.Location = new System.Drawing.Point(61, 290);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Location = new System.Drawing.Point(61, 290);
+            this.button_Cancelar.Name = "button_Cancelar";
+            this.button_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.button_Cancelar.TabIndex = 10;
+            this.button_Cancelar.Text = "Cancelar";
+            this.button_Cancelar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_Guardar
             // 
-            this.button2.Location = new System.Drawing.Point(197, 290);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Guardar.Location = new System.Drawing.Point(197, 290);
+            this.button_Guardar.Name = "button_Guardar";
+            this.button_Guardar.Size = new System.Drawing.Size(75, 23);
+            this.button_Guardar.TabIndex = 11;
+            this.button_Guardar.Text = "Guardar";
+            this.button_Guardar.UseVisualStyleBackColor = true;
+            this.button_Guardar.Click += new System.EventHandler(this.button_Guardar_Click);
             // 
-            // RegistrarVehiculo
+            // Form_RegistrarVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 325);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button_Guardar);
+            this.Controls.Add(this.button_Cancelar);
+            this.Controls.Add(this.textBox_Observaciones);
+            this.Controls.Add(this.textBox_Año);
+            this.Controls.Add(this.textBox_Modelo);
+            this.Controls.Add(this.textBox_Marca);
+            this.Controls.Add(this.textBox_Dominio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "RegistrarVehiculo";
+            this.Name = "Form_RegistrarVehiculo";
             this.Text = "Registrar Vehiculo";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,12 +173,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox_Dominio;
+        private System.Windows.Forms.TextBox textBox_Marca;
+        private System.Windows.Forms.TextBox textBox_Modelo;
+        private System.Windows.Forms.TextBox textBox_Año;
+        private System.Windows.Forms.TextBox textBox_Observaciones;
+        private System.Windows.Forms.Button button_Cancelar;
+        private System.Windows.Forms.Button button_Guardar;
     }
 }

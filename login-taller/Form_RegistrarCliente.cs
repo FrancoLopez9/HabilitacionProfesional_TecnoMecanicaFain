@@ -33,5 +33,10 @@ namespace login_taller
             DB_AccesoDatosSQLite.guardarCliente(unCliente);
             MessageBox.Show("El cliente se ha registrado exitosamente");
         }
+
+        private void button_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
