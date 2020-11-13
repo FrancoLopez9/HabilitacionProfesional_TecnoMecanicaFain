@@ -50,5 +50,28 @@ namespace login_taller
             Form_ModificarCliente p = new Form_ModificarCliente();
             p.Show();
         }
+
+        private void registrarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_RegistrarProveedor p = new Form_RegistrarProveedor();
+            p.Show();
+        }
+
+        private void modificarProveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form_ModificarProveedor p = new Form_ModificarProveedor();
+            p.Show();
+        }
+
+        private void buscarProveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form_BuscarProveedor p = new Form_BuscarProveedor();
+            p.Show();
+        }
+
+        private void Form_MenuPrinc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

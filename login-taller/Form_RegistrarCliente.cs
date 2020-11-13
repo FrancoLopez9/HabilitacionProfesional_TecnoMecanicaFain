@@ -32,7 +32,6 @@ namespace login_taller
             unCliente.Telefono = textBox_Telefono.Text;
             DB_AccesoDatosSQLite.guardarCliente(unCliente);
             MessageBox.Show("El cliente se ha registrado exitosamente");
-
         }
     }
 }

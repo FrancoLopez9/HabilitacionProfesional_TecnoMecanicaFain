@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace login_taller
 {
-    class Proveedor
+    public class Proveedor
     {
-        private int Numero;
-        private int CUIT;
-        private string RazonSocial;
-        private string Telefono;
-        private string Domicilio;
-        private int CodigoPostal;
-        private string Email;
+        public int Numero { get; set; }
+        public string CUIT { get; set; }
+        public string RazonSocial { get; set; }
+        public int Telefono { get; set; }
+        public string Domicilio { get; set; }
+        public int CodigoPostal { get; set; }
+        public string Email { get; set; }
     }
 }

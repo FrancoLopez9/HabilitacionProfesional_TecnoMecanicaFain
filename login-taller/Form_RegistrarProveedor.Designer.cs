@@ -34,14 +34,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox_RazonSocial = new System.Windows.Forms.TextBox();
+            this.textBox_CUIT = new System.Windows.Forms.TextBox();
+            this.textBox_CodigoPostal = new System.Windows.Forms.TextBox();
+            this.textBox_Domicilio = new System.Windows.Forms.TextBox();
+            this.textBox_Email = new System.Windows.Forms.TextBox();
+            this.textBox_Telefono = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_Guardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,47 +98,47 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Código Postal:";
             // 
-            // textBox1
+            // textBox_RazonSocial
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 22);
-            this.textBox1.TabIndex = 6;
+            this.textBox_RazonSocial.Location = new System.Drawing.Point(123, 18);
+            this.textBox_RazonSocial.Name = "textBox_RazonSocial";
+            this.textBox_RazonSocial.Size = new System.Drawing.Size(179, 22);
+            this.textBox_RazonSocial.TabIndex = 6;
             // 
-            // textBox2
+            // textBox_CUIT
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 22);
-            this.textBox2.TabIndex = 7;
+            this.textBox_CUIT.Location = new System.Drawing.Point(123, 46);
+            this.textBox_CUIT.Name = "textBox_CUIT";
+            this.textBox_CUIT.Size = new System.Drawing.Size(179, 22);
+            this.textBox_CUIT.TabIndex = 7;
             // 
-            // textBox3
+            // textBox_CodigoPostal
             // 
-            this.textBox3.Location = new System.Drawing.Point(123, 158);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 22);
-            this.textBox3.TabIndex = 8;
+            this.textBox_CodigoPostal.Location = new System.Drawing.Point(123, 158);
+            this.textBox_CodigoPostal.Name = "textBox_CodigoPostal";
+            this.textBox_CodigoPostal.Size = new System.Drawing.Size(179, 22);
+            this.textBox_CodigoPostal.TabIndex = 8;
             // 
-            // textBox4
+            // textBox_Domicilio
             // 
-            this.textBox4.Location = new System.Drawing.Point(123, 130);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 22);
-            this.textBox4.TabIndex = 9;
+            this.textBox_Domicilio.Location = new System.Drawing.Point(123, 130);
+            this.textBox_Domicilio.Name = "textBox_Domicilio";
+            this.textBox_Domicilio.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Domicilio.TabIndex = 9;
             // 
-            // textBox5
+            // textBox_Email
             // 
-            this.textBox5.Location = new System.Drawing.Point(123, 102);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 22);
-            this.textBox5.TabIndex = 10;
+            this.textBox_Email.Location = new System.Drawing.Point(123, 102);
+            this.textBox_Email.Name = "textBox_Email";
+            this.textBox_Email.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Email.TabIndex = 10;
             // 
-            // textBox6
+            // textBox_Telefono
             // 
-            this.textBox6.Location = new System.Drawing.Point(123, 74);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 22);
-            this.textBox6.TabIndex = 11;
+            this.textBox_Telefono.Location = new System.Drawing.Point(123, 74);
+            this.textBox_Telefono.Name = "textBox_Telefono";
+            this.textBox_Telefono.Size = new System.Drawing.Size(179, 22);
+            this.textBox_Telefono.TabIndex = 11;
             // 
             // button1
             // 
@@ -149,36 +149,38 @@
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_Guardar
             // 
-            this.button2.Location = new System.Drawing.Point(199, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Guardar.Location = new System.Drawing.Point(199, 212);
+            this.button_Guardar.Name = "button_Guardar";
+            this.button_Guardar.Size = new System.Drawing.Size(75, 23);
+            this.button_Guardar.TabIndex = 13;
+            this.button_Guardar.Text = "Guardar";
+            this.button_Guardar.UseVisualStyleBackColor = true;
+            this.button_Guardar.Click += new System.EventHandler(this.button_Guardar_Click);
             // 
-            // RegistrarProveedor
+            // Form_RegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 256);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Guardar);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Telefono);
+            this.Controls.Add(this.textBox_Email);
+            this.Controls.Add(this.textBox_Domicilio);
+            this.Controls.Add(this.textBox_CodigoPostal);
+            this.Controls.Add(this.textBox_CUIT);
+            this.Controls.Add(this.textBox_RazonSocial);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "RegistrarProveedor";
+            this.Name = "Form_RegistrarProveedor";
             this.Text = "Registrar Proveedor";
+            this.Load += new System.EventHandler(this.Form_RegistrarProveedor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,13 +194,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox_RazonSocial;
+        private System.Windows.Forms.TextBox textBox_CUIT;
+        private System.Windows.Forms.TextBox textBox_CodigoPostal;
+        private System.Windows.Forms.TextBox textBox_Domicilio;
+        private System.Windows.Forms.TextBox textBox_Email;
+        private System.Windows.Forms.TextBox textBox_Telefono;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_Guardar;
     }
 }
