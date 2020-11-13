@@ -148,6 +148,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form_BuscarCliente";
             this.Text = "buscarCliente";
+            this.Load += new System.EventHandler(this.Form_BuscarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

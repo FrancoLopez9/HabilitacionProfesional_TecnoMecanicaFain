@@ -30,7 +30,8 @@ namespace login_taller
             unCliente.DNI = Int32.Parse(textBox_DNI.Text); //Hay que convertir el texto en integer
             unCliente.Domicilio = textBox_Domicilio.Text;
             unCliente.Telefono = textBox_Telefono.Text;
-            DB_AccesoDatosSQLite.guardarClientes(unCliente);
+            DB_AccesoDatosSQLite.guardarCliente(unCliente);
+            MessageBox.Show("El cliente se ha registrado exitosamente");
 
         }
     }

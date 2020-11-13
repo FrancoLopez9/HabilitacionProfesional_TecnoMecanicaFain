@@ -41,7 +41,7 @@ namespace login_taller
             }
         }
 
-        public static void guardarClientes(Cliente unCliente)
+        public static void guardarCliente(Cliente unCliente)
         {
             using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
             {
@@ -49,6 +49,31 @@ namespace login_taller
                     " VALUES (@Nombre, @Apellido, @DNI, @Domicilio, @Telefono)", unCliente);
             }
 
+        }
+
+        public static void modificarCliente(Cliente unCliente)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                cnn.Execute("UPDATE Cliente" +
+                    " SET Nombre = @Nombre" +
+                    ", Apellido = @Apellido" + 
+                    ", DNI= @DNI" +
+                    ", Domicilio= @Domicilio" +
+                    ", Telefono= @Telefono" +
+                    " WHERE Numero = @Numero",unCliente);
+            }
+
+        }
+
+        public static Cliente devolverCliente(int numeroCliente)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                var salida = cnn.Query<Cliente>("select * from Cliente", new DynamicParameters());
+                List<Cliente> listaClientes = salida.ToList();
+                return listaClientes.Where(x => x.Numero == numeroCliente).First();
+            }
         }
 
         private static string loadConnectionString(string id = "Default")

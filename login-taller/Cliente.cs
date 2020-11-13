@@ -8,7 +8,7 @@ namespace login_taller
 {
     public class Cliente
     {
-        public string Numero { get; set; }
+        public int Numero { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int DNI { get; set; }
