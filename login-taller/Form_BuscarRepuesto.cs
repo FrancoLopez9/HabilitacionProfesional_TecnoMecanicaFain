@@ -15,6 +15,14 @@ namespace login_taller
         public Form_BuscarRepuesto()
         {
             InitializeComponent();
+            dataGridView1.DataSource = DB_AccesoDatosSQLite.cargarRepuestos();
+        }
+
+        private void button_Buscar_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = DB_AccesoDatosSQLite.cargarRepuestos().Where(x =>
+            x.Nombre.Contains(textBox_Nombre.Text) &
+            x.CodigoProveedor.ToString().Contains(textBox_CodigoProveedor.Text)).ToList();
         }
     }
 }

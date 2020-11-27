@@ -43,5 +43,11 @@ namespace login_taller
             DB_AccesoDatosSQLite.modificarCliente(unCliente);
             MessageBox.Show("El cliente se ha modificado exitosamente");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_BuscarCliente p = new Form_BuscarCliente();
+            p.Show();
+        }
     }
 }

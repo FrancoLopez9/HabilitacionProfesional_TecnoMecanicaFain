@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace login_taller
 {
-    class Repuesto
+    public class Repuesto
     {
-        private int NumeroProveedor;
-        private int Numero;
-        private int CodigoProveedor;
-        private string Nombre;
-        private string Marca;
-        private float PrecioCosto;
-        private int Ganancia;
-        private float PrecioLista;
-        private int Stock;
+        public int NumeroProveedor { get; set; }
+        public int Numero { get; set; }
+        public int CodigoProveedor { get; set; }
+        public string Nombre { get; set; }
+        public string Marca { get; set; }
+        public float PrecioCosto { get; set; }
+        public int Ganancia { get; set; }
+        public float PrecioLista { get; set; }
+        public int Stock { get; set; }
 
     }
 }

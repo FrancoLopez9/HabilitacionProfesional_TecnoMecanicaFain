@@ -158,6 +158,48 @@ namespace login_taller
                 return listaVehiculos.Where(x => x.Numero == numeroVehiculo).First();
             }
         }
+
+        // REPUESTO
+        public static List<Repuesto> cargarRepuestos()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                var salida = cnn.Query<Repuesto>("select * from Repuesto", new DynamicParameters());
+                return salida.ToList();
+            }
+        }
+
+        public static void guardarRepuesto(Repuesto unRepuesto)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                cnn.Execute("INSERT INTO Repuesto (NumeroProveedor, CodigoProveedor, Nombre, Marca, PrecioCosto, Ganancia, PrecioLista, Stock)" +
+                    " VALUES (@NumeroProveedor, @CodigoProveedor, @Nombre, @Marca, @PrecioCosto, @Ganancia, @PrecioLista, @Stock)", unRepuesto);
+            }
+        }
+        public static void modificarRepuesto(Repuesto unRepuesto)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                cnn.Execute("UPDATE Repuesto" +
+                    " SET Nombre = @Nombre" +
+                    ", Marca = @Marca" +
+                    ", PrecioCosto = @PrecioCosto" +
+                    ", PrecioLista = @PrecioLista" +
+                    ", Ganancia = @Ganancia" +
+                    ", Stock = @Stock" +
+                    " WHERE Numero = @Numero", unRepuesto);
+            }
+        }
+        public static Repuesto devolverRepuesto(int numeroRepuesto)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(loadConnectionString()))
+            {
+                var salida = cnn.Query<Repuesto>("select * from Repuesto", new DynamicParameters());
+                List<Repuesto> listaRepuestos = salida.ToList();
+                return listaRepuestos.Where(x => x.Numero == numeroRepuesto).First();
+            }
+        }
         private static string loadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

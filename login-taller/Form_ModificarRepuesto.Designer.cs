@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_Buscar = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,32 +38,34 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button_Cancelar = new System.Windows.Forms.Button();
+            this.button_Guardar = new System.Windows.Forms.Button();
+            this.textBox_Numero = new System.Windows.Forms.TextBox();
+            this.textBox_Nombre = new System.Windows.Forms.TextBox();
+            this.textBox_CodigoProveedor = new System.Windows.Forms.TextBox();
+            this.textBox_Marca = new System.Windows.Forms.TextBox();
+            this.textBox_PrecioCosto = new System.Windows.Forms.TextBox();
+            this.textBox_Ganancia = new System.Windows.Forms.TextBox();
+            this.textBox_PrecioLista = new System.Windows.Forms.TextBox();
+            this.textBox_Stock = new System.Windows.Forms.TextBox();
+            this.button_Seleccionar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // button_Buscar
             // 
-            this.button1.Location = new System.Drawing.Point(23, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_Buscar.Location = new System.Drawing.Point(12, 26);
+            this.button_Buscar.Name = "button_Buscar";
+            this.button_Buscar.Size = new System.Drawing.Size(137, 23);
+            this.button_Buscar.TabIndex = 0;
+            this.button_Buscar.Text = "Buscar Número";
+            this.button_Buscar.UseVisualStyleBackColor = true;
+            this.button_Buscar.Click += new System.EventHandler(this.button_Buscar_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Red;
-            this.checkBox1.Location = new System.Drawing.Point(147, 26);
+            this.checkBox1.Location = new System.Drawing.Point(175, 26);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(140, 21);
             this.checkBox1.TabIndex = 1;
@@ -142,95 +144,108 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "Stock:";
             // 
-            // button2
+            // button_Cancelar
             // 
-            this.button2.Location = new System.Drawing.Point(70, 305);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Location = new System.Drawing.Point(70, 305);
+            this.button_Cancelar.Name = "button_Cancelar";
+            this.button_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.button_Cancelar.TabIndex = 10;
+            this.button_Cancelar.Text = "Cancelar";
+            this.button_Cancelar.UseVisualStyleBackColor = true;
+            this.button_Cancelar.Click += new System.EventHandler(this.button_Cancelar_Click);
             // 
-            // button3
+            // button_Guardar
             // 
-            this.button3.Location = new System.Drawing.Point(200, 305);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_Guardar.Location = new System.Drawing.Point(200, 305);
+            this.button_Guardar.Name = "button_Guardar";
+            this.button_Guardar.Size = new System.Drawing.Size(75, 23);
+            this.button_Guardar.TabIndex = 11;
+            this.button_Guardar.Text = "Guardar";
+            this.button_Guardar.UseVisualStyleBackColor = true;
+            this.button_Guardar.Click += new System.EventHandler(this.button_Guardar_Click);
             // 
-            // textBox1
+            // textBox_Numero
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 22);
-            this.textBox1.TabIndex = 12;
+            this.textBox_Numero.Location = new System.Drawing.Point(135, 67);
+            this.textBox_Numero.Name = "textBox_Numero";
+            this.textBox_Numero.Size = new System.Drawing.Size(63, 22);
+            this.textBox_Numero.TabIndex = 12;
             // 
-            // textBox2
+            // textBox_Nombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(135, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 22);
-            this.textBox2.TabIndex = 13;
+            this.textBox_Nombre.Location = new System.Drawing.Point(135, 123);
+            this.textBox_Nombre.Name = "textBox_Nombre";
+            this.textBox_Nombre.Size = new System.Drawing.Size(152, 22);
+            this.textBox_Nombre.TabIndex = 13;
             // 
-            // textBox3
+            // textBox_CodigoProveedor
             // 
-            this.textBox3.Location = new System.Drawing.Point(135, 95);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 22);
-            this.textBox3.TabIndex = 14;
+            this.textBox_CodigoProveedor.Location = new System.Drawing.Point(135, 95);
+            this.textBox_CodigoProveedor.Name = "textBox_CodigoProveedor";
+            this.textBox_CodigoProveedor.Size = new System.Drawing.Size(152, 22);
+            this.textBox_CodigoProveedor.TabIndex = 14;
             // 
-            // textBox4
+            // textBox_Marca
             // 
-            this.textBox4.Location = new System.Drawing.Point(135, 151);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 22);
-            this.textBox4.TabIndex = 15;
+            this.textBox_Marca.Location = new System.Drawing.Point(135, 151);
+            this.textBox_Marca.Name = "textBox_Marca";
+            this.textBox_Marca.Size = new System.Drawing.Size(152, 22);
+            this.textBox_Marca.TabIndex = 15;
             // 
-            // textBox5
+            // textBox_PrecioCosto
             // 
-            this.textBox5.Location = new System.Drawing.Point(135, 179);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 22);
-            this.textBox5.TabIndex = 16;
+            this.textBox_PrecioCosto.Location = new System.Drawing.Point(135, 179);
+            this.textBox_PrecioCosto.Name = "textBox_PrecioCosto";
+            this.textBox_PrecioCosto.Size = new System.Drawing.Size(152, 22);
+            this.textBox_PrecioCosto.TabIndex = 16;
             // 
-            // textBox6
+            // textBox_Ganancia
             // 
-            this.textBox6.Location = new System.Drawing.Point(135, 207);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 22);
-            this.textBox6.TabIndex = 17;
+            this.textBox_Ganancia.Location = new System.Drawing.Point(135, 207);
+            this.textBox_Ganancia.Name = "textBox_Ganancia";
+            this.textBox_Ganancia.Size = new System.Drawing.Size(152, 22);
+            this.textBox_Ganancia.TabIndex = 17;
             // 
-            // textBox7
+            // textBox_PrecioLista
             // 
-            this.textBox7.Location = new System.Drawing.Point(135, 235);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(152, 22);
-            this.textBox7.TabIndex = 18;
+            this.textBox_PrecioLista.Location = new System.Drawing.Point(135, 235);
+            this.textBox_PrecioLista.Name = "textBox_PrecioLista";
+            this.textBox_PrecioLista.Size = new System.Drawing.Size(152, 22);
+            this.textBox_PrecioLista.TabIndex = 18;
             // 
-            // textBox8
+            // textBox_Stock
             // 
-            this.textBox8.Location = new System.Drawing.Point(135, 263);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(152, 22);
-            this.textBox8.TabIndex = 19;
+            this.textBox_Stock.Location = new System.Drawing.Point(135, 263);
+            this.textBox_Stock.Name = "textBox_Stock";
+            this.textBox_Stock.Size = new System.Drawing.Size(152, 22);
+            this.textBox_Stock.TabIndex = 19;
             // 
-            // ModificarRepuesto
+            // button_Seleccionar
+            // 
+            this.button_Seleccionar.Location = new System.Drawing.Point(204, 66);
+            this.button_Seleccionar.Name = "button_Seleccionar";
+            this.button_Seleccionar.Size = new System.Drawing.Size(94, 23);
+            this.button_Seleccionar.TabIndex = 20;
+            this.button_Seleccionar.Text = "Seleccionar";
+            this.button_Seleccionar.UseVisualStyleBackColor = true;
+            this.button_Seleccionar.Click += new System.EventHandler(this.button_Seleccionar_Click);
+            // 
+            // Form_ModificarRepuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 345);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Seleccionar);
+            this.Controls.Add(this.textBox_Stock);
+            this.Controls.Add(this.textBox_PrecioLista);
+            this.Controls.Add(this.textBox_Ganancia);
+            this.Controls.Add(this.textBox_PrecioCosto);
+            this.Controls.Add(this.textBox_Marca);
+            this.Controls.Add(this.textBox_CodigoProveedor);
+            this.Controls.Add(this.textBox_Nombre);
+            this.Controls.Add(this.textBox_Numero);
+            this.Controls.Add(this.button_Guardar);
+            this.Controls.Add(this.button_Cancelar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -240,8 +255,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "ModificarRepuesto";
+            this.Controls.Add(this.button_Buscar);
+            this.Name = "Form_ModificarRepuesto";
             this.Text = "Modificar Repuesto";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -250,7 +265,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_Buscar;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -260,15 +275,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button_Cancelar;
+        private System.Windows.Forms.Button button_Guardar;
+        private System.Windows.Forms.TextBox textBox_Numero;
+        private System.Windows.Forms.TextBox textBox_Nombre;
+        private System.Windows.Forms.TextBox textBox_CodigoProveedor;
+        private System.Windows.Forms.TextBox textBox_Marca;
+        private System.Windows.Forms.TextBox textBox_PrecioCosto;
+        private System.Windows.Forms.TextBox textBox_Ganancia;
+        private System.Windows.Forms.TextBox textBox_PrecioLista;
+        private System.Windows.Forms.TextBox textBox_Stock;
+        private System.Windows.Forms.Button button_Seleccionar;
     }
 }

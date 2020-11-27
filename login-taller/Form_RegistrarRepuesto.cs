@@ -19,7 +19,7 @@ namespace login_taller
         public Form_RegistrarRepuesto()
         {
             InitializeComponent();
-            cantidadRepuesto.Text = Convert.ToString('0');
+            textBox_Stock.Text = Convert.ToString('0');
 
 
         }
@@ -48,17 +48,39 @@ namespace login_taller
 
         private void precioLista_Click(object sender, EventArgs e)
         {
-            string var = precioCosto.Text;
+            string var = textBox_PrecioCosto.Text;
             valor1 = float.Parse(var);
-            string var1 = ganancia.Text;
+            string var1 = textBox_Ganancia.Text;
             valor2 = 1 + (float.Parse(var1) / 100);
             float valor = (valor1 * valor2);
-            precioLista.Text = Convert.ToString(valor);
+            textBox_PrecioLista.Text = Convert.ToString(valor);
         }
 
-        private void label3_Click(object sender, EventArgs e)
+       
+        private void button_BuscarProveedor_Click(object sender, EventArgs e)
         {
+            Form_BuscarProveedor p = new Form_BuscarProveedor();
+            p.Show();
+        }
 
+        private void button_Agregar_Click(object sender, EventArgs e)
+        {
+            Repuesto unRepuesto = new Repuesto();
+            unRepuesto.CodigoProveedor = Int32.Parse(textBox_CodigoProveedor.Text);
+            unRepuesto.NumeroProveedor = Int32.Parse(textBox_NumeroProveedor.Text);
+            unRepuesto.Nombre = textbox_Nombre.Text;
+            unRepuesto.Marca = textBox_Marca.Text;
+            unRepuesto.PrecioCosto = float.Parse(textBox_PrecioCosto.Text);
+            unRepuesto.PrecioLista = float.Parse(textBox_PrecioLista.Text);
+            unRepuesto.Ganancia = Int32.Parse(textBox_Ganancia.Text);
+            unRepuesto.Stock = Int32.Parse(textBox_Stock.Text);
+            DB_AccesoDatosSQLite.guardarRepuesto(unRepuesto);
+            MessageBox.Show("El repuesto se ha registrado exitosamente");
+        }
+
+        private void button_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
     }

@@ -91,5 +91,11 @@ namespace login_taller
             Form_BuscarVehiculo p = new Form_BuscarVehiculo();
             p.Show();
         }
+
+        private void modificarRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ModificarRepuesto p = new Form_ModificarRepuesto();
+            p.Show();
+        }
     }
 }
